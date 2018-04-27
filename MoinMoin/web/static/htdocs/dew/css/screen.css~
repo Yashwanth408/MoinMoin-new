@@ -1,0 +1,276 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DejaVu Sans", "Verdana", sans-serif;
+    background: #8ea33a url(back.png) repeat top left;
+}
+
+.cont1 {
+    margin: 0 auto;
+    padding: 0;
+    background: #fff url(lshadow.png) repeat-y top left;
+    position: absolute;
+    left: 50%;
+    margin-left: -25em;
+}
+
+.cont2 {
+    background:  url(rshadow.png) repeat-y top right #fff;
+    margin: 0;
+    padding: 0;
+    padding-right: 32px;
+    margin-left: 32px;
+}
+
+.cont3 {
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid #444;
+    border-right: 1px solid #444;
+    background: #fff;
+    width: 45em;
+}
+
+.bar {
+    background: #bc8;
+    color: #000;
+    border: none;
+    border-bottom: 1px solid #790;
+    border-top: 1px solid #790;
+    padding: 0.5em;
+}
+
+.menu {
+    float: right;
+    overflow: hidden;
+    margin: 0;
+    background: #efb url(fade.png) bottom left repeat-x;
+    padding: 0 0.5em;
+    padding-bottom: 64px;
+    color: #790;
+    width: 9em;
+    margin-left: -10em;
+    margin-right: -1px;
+}
+
+
+.menu h1 {
+    font: inherit;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    color: #790;
+    margin-top: 1em;
+}
+
+.menu ul {
+    display: block;
+    margin: 0 1ex;
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    display: block;
+    margin: 0.25ex 0;
+    padding: 0;
+}
+
+.menu li.current {
+	font-weight: bold;
+}
+
+.menu a {
+    display: block;
+    color: #fa0;
+    font: inherit;
+    text-decoration: inherit;
+}
+
+.menu a:hover {
+    color: #000;
+    background: #de9;
+}
+.menu a.status {
+    font-size: smaller;
+    padding-left: 1ex;
+}
+.menu .date {
+    font-style: italic;
+    font-size: smaller;
+    padding-left: 1ex;
+}
+
+.ranking {
+    font-size: smaller;
+}
+
+.footer {
+    clear: both;
+    background: #bc8;
+    padding: 0.125em;
+    border-top: 1px solid #790;
+    margin: 0;
+}
+
+.header {
+    height: 128px;
+    background: #efb url(leaves.png) repeat center center;
+}
+
+.wynik {
+    color: #666;
+    margin: 1em 0;
+    border-top: 2px dashed #ddd;
+}
+
+#rozwform, #przyklad {
+    margin: 0 -1em;
+    padding: 1em;
+    background: #fafff0 url(bshadow.png) bottom left repeat-x;
+    color: #563;
+    border-top: 1px solid #cda;
+}
+
+.content {
+    position: relative;
+    right: 1px;
+    float: left;
+    padding: 0;
+    color: #444;
+    background: #fff url(bshadow.png) top left repeat-x;
+    overflow: hidden;
+    width: 35em;
+    margin-right: 10em;
+}
+
+
+
+#page { margin: 0; padding: 0; }
+
+#content { 
+    border-right: 1px solid #cda;
+    padding: 1em;
+}
+* html #content { height: 36em; }
+
+#content p {
+    margin: 0.4em 0;
+    padding: 0;
+    text-align: justify;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    font: inherit;
+    color: #790;
+    margin: 0.25em 0;
+    margin-top: 1em;
+    padding: 0;
+}
+
+.content h1 { font-size: 1.8em;}
+.content h2 { font-size: 1.4em;}
+.content h3 { font-size: 1em;}
+
+/* MoinMoin stuff */
+
+
+#credits { display: block; text-align: center; font-size: small; }
+#credits li { display: inline; padding: 0 0.5ex; }
+
+#username li { display: inline; margin: 0.5em; }
+#username form { display: inline; } 
+#username { display: block; margin: 0.125em 0; text-align: right; font-size: small; }
+#username input { display: inline; background: transparent; border: none; font-family: inherit; color: #790; cursor: pointer; font-size: inherit; padding: 0; }
+#username input:hover { text-decoration: underline; }
+
+a { color: #fa0; text-decoration: none; }
+a.nonexistent, a.badinterwiki { color: #a94; }
+a:visited { color: #d80; }
+a:visited:hover, a:hover { text-decoration: underline; }
+
+#pagetrail, .editbar { display: inline; padding: 0; margin: 0; }
+#iconbar li, #iconbar li a, #pagetrail li { display: inline; padding: 0; margin: 0; }
+#iconbar { display: block; float: right; margin: 8px; }
+#iconbar a:hover { background: none; }
+#pagetrail li:after { content: " » "; }
+* html #pagetrail li { margin-right: 1ex; }
+#pagetrail li:last-child { font-weight: bold; }
+#pagetrail li:last-child:after { content: ""; }
+#pagetrail { font-size: small; }
+.bar a, #pagetrail li a, .footer a { color: #790; }
+
+.codenumbers {
+    display: block;
+    float: right;
+    font-size: small;
+}
+
+#searchform {
+    margin: 0.5em auto;
+    padding: 0;
+    text-align: center;
+}
+
+#searchform input {
+    width: 3.5em;
+    margin: 0;
+    padding: 0;
+}
+
+#searchform input#searchinput {
+    border: 1px solid black;
+    background: #fff;
+    color: #000;
+    margin: 0.25em;
+    width: 8em;
+    cursor: text;
+    display: block;
+}
+
+.menu select {
+    border: 1px solid #000;
+    font-size: small;
+    width: 8em;
+    color: #790;
+    background: #efb;
+}
+.menu label {
+    font-size: small;
+}
+
+.editor {
+    background-color: #bc8;
+    width: 100%;
+}
+
+.editor textarea {
+    display: block;
+    width: 90%;
+    margin: 0.5em auto;
+}
+
+
+
+#logo {
+    padding: 16px;
+}
+
+#logo img {
+    vertical-align: bottom;
+}
+
+#logo a {
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: verdana, sans-serif;
+}
+

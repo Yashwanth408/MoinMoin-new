@@ -1,0 +1,106 @@
+@import url(acm.css)
+/* Formatting of the content */
+
+body { color: #000; background: #fff; }
+
+a { color: #d00; text-decoration: none; }
+a.nonexistent, a.badinterwiki { color: #e80; }
+a:visited { color: #d66; }
+a:visited:hover, a:hover { color: #fff; background: #000; }
+
+h1, h2, h3, h4, h5, h6 { color: #666; }	
+#pagelocation { 
+    color: #666;
+    font-size: xx-large; 
+    margin: 0.25em 0 0 0;
+    font-weight: bold;
+}
+
+#header, #page, #footer {
+    margin: 1em 2em;
+    border-bottom: 0.25em solid black;
+/*    width: 40em;
+    margin: 1em auto;  */
+}
+
+.clear {
+    height: 0;
+    clear: both;
+}
+
+#logo { display:block; float: right; padding: 0.25ex; } 
+#logo img {
+    vertical-align: middle;
+    border: none;
+    display: block;
+} 
+#logo a {
+    color: black;  
+    text-decoration: none;
+    white-space: nowrap;
+    border: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#logo a:hover {
+    background: none;
+}
+
+
+#username form { display: inline; } 
+#username { margin: 0.25em 0; }
+
+#message, pre {
+    background: #eee;
+    padding: 0.25em;
+    margin: 1em 0;    
+}
+#message .buttons { text-align: right; }
+
+#footer {
+    background: #eee;
+    padding: 0.25em;
+    margin-top: 0;
+}
+#footer a { white-space: nowrap; }
+#footer p { text-align: left; }
+#page { margin-bottom: 0; }
+
+.editbar { display: inline; padding: 0; margin: 0;}
+.editbar li { display: inline; padding: 0; margin: 0;}
+
+/* Get rid of those stupid lists... */
+#pagetrail, #navibar, .editbar { display: inline; padding: 0; margin: 0; }
+#iconbar li, #pagetrail li, #navibar li { display: inline; padding: 0; margin: 0; }
+#navibar li { padding: 0 1ex 0 0; }
+#iconbar { display block; float: right; width: 118px; }
+#iconbar a:hover { background: none; }
+#pagetrail li:after { content: " » "; }
+#pagetrail li:last-child { font-weight: bold; }
+#pagetrail li:last-child:after { content: ""; }
+/*#pagetrail, #navibar { font-size: small; } */
+#navibar span a { padding: 0 0.25ex; }
+#navibar .current { font-weight: bold; }
+#navibar .userlink { font-style: italic; }
+
+.codenumbers {
+    display: block;
+    float: right;
+    font-size: small;
+}
+
+abbr { cursor: help; }
+
+img { border: none; }
+
+textarea {
+    display: block;
+    width: 100%;
+}
+
+#editor-help {
+    font-size: x-small; 
+    font-family: monospace;
+    color: #666;
+}

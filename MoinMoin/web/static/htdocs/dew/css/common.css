@@ -1,0 +1,250 @@
+/*  common.css - MoinMoin Default Styles
+
+Copyright (c) 2001, 2002, 2003 by Juergen Hermann
+*/
+
+html, body {
+    font-size: medium;
+}
+a.www:before {content: url(../img/moin-www.png); margin: 0 0.2em;}
+a.http:before {content: url(../img/moin-www.png); margin: 0 0.2em;}
+a.https:before {content: url(../img/moin-www.png); margin: 0 0.2em;}
+a.file:before {content: url(../img/moin-ftp.png); margin: 0 0.2em;}
+a.ftp:before {content: url(../img/moin-ftp.png); margin: 0 0.2em;}
+a.nntp:before {content: url(../img/moin-news.png); margin: 0 0.2em;}
+a.news:before {content: url(../img/moin-news.png); margin: 0 0.2em;}
+a.telnet:before {content: url(../img/moin-telnet.png); margin: 0 0.2em;}
+a.irc:before {content: url(../img/moin-telnet.png); margin: 0 0.2em;}
+a.mailto:before {content: url(../img/moin-email.png); margin: 0 0.2em;}
+a.attachment:before {content: url(../img/moin-attach.png); margin: 0 0.2em;}
+a.badinterwiki:before {content: url(../img/moin-inter.png); margin: 0 0.2em;}
+a.interwiki:before {content: url(../img/moin-inter.png); margin: 0 0.2em;}
+
+blockquote {
+    clear: both;
+    margin: 0.25em 1.5em;
+}
+
+/* Headings */
+
+li p {
+	margin: .25em 0;
+}
+
+ul li {
+    list-style: square outside;
+    margin: 0;
+    padding: 0;
+} 
+ul, ol { 
+    margin: 0.25em 0; 
+    padding: 0 0 0 1em; 
+}
+li.gap { margin-top: 0.5em; } 
+
+a img, a img.drawing { border: none; } 
+dt { font-weight: bold; }
+
+pre {
+    clear: both;
+	padding: 0.5em;
+	font-family: monospace;
+        font-weight: normal;
+        font-size: medium;
+	white-space: pre;
+	/* begin css 3 or browser specific rules - do not remove! Forcing long lines to wrap.
+	see: http://forums.techguy.org/archive/index.php/t-249849.html */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    /* end css 3 or browser specific rules */
+}
+
+table {
+	margin: 0.5em 0 0 0.5em;
+	border-collapse: collapse;
+        clear: both;
+}
+
+td {
+	padding: 0.25em 0.5em 0.25em 0.5em;
+	border: 1px solid #666;
+}
+
+td p {
+	margin: 0;
+	padding: 0;
+}
+
+/* standard rule ---- */
+hr {
+    clear: both;
+    height: 0.18ex;
+    background: #790;
+    color: #790;
+    border: none;
+    margin: 0.5em auto;
+}
+
+/* custom rules ----- to ---------- */
+.hr1 {height: 3px;}
+.hr2 {height: 4px;}
+.hr3 {height: 5px;}
+.hr4 {height: 6px;}
+.hr5 {height: 7px;}
+.hr6 {height: 8px;}
+
+/* Replacement for html 3 u tag */
+.u {text-decoration: underline;}
+
+.footnotes ul {
+	padding: 0 2em;
+	margin: 0 0 1em;
+	list-style: none;
+}
+
+.footnotes li {
+}
+
+
+/* eye catchers */
+.warning, .error { color: red; }
+
+strong.highlight 
+{
+	background-color: #f0ffbb;
+	padding: 0 0.2em;
+        font-style: normal;
+        font-weight: bold;
+        font-variant: normal;
+}
+
+
+/* Recent changes */
+
+div.recentchanges table {
+	border: 1px solid #e5e5e5; 
+}
+
+.recentchanges p {
+	margin: 0.25em;
+}
+
+.recentchanges td {
+	border: none;
+	border-top: 1px solid #e5e5e5;
+	vertical-align: top;
+}
+
+.rcdaybreak {
+	background-color: #f5f5f5;
+}
+
+.rcdaybreak td a {
+	font-size: small;
+        border: none;
+}
+
+.rcicon1, .rcicon2 {
+    text-align: center;
+}
+
+.rcicon1 a, .rcicon2 a {
+    border: none !important;
+}
+
+.rcpagelink {
+	width: 40%;
+}
+
+.rctime {
+	font-size: small;
+	white-space: nowrap;
+}
+
+.rceditor {
+	white-space: nowrap;
+	font-size: small;
+}
+
+.recentchanges td.rccomment {
+        border-top: 1px dashed #e5e5e5;
+        background-color: #f5f5f5;
+	font-size: small;
+        font-family: Verdana, sans-serif;
+}
+
+.rcrss {
+	float: right;
+}
+.rcrss a {
+        border: none !important;
+}
+
+.recentchanges[dir="rtl"] .rcrss {
+	float: left;
+}
+
+/* User Preferences */
+
+.userpref table, .userpref td {
+	border: none;
+}
+
+/* CSS for new code_area markup used by Colorizer and ParserBase */
+
+div.codearea { /* the div makes the border */
+	margin: 0.5em 0;
+	padding: 0;
+/*	background-color: #F3F5F7;
+        border: 1px dashed #ccc;*/
+	color: black;
+        clear: both;
+}
+
+div.codearea pre { /* the pre has no border and is inside the div */
+	margin: 0;
+	padding: 0.5em;
+	border: none;
+        clear: none;
+}
+
+a.codenumbers { /* format of the line numbering link */
+	margin: 0 10pt;
+	font-size: 0.85em;
+	color: gray;
+}
+
+/* format of certain syntax spans */
+div.codearea pre span.LineNumber {color: gray;}
+div.codearea pre span.ID         {color: #000000;}
+div.codearea pre span.Operator   {color: #0000C0;}
+div.codearea pre span.Char       {color: #004080; font-style: oblique;}
+div.codearea pre span.Comment    {color: #008000; font-style: oblique;}
+div.codearea pre span.Number     {color: #0080C0; font-style: oblique;}
+div.codearea pre span.String     {color: #004080; font-style: oblique;}
+div.codearea pre span.SPChar     {color: #0000C0;}
+div.codearea pre span.ResWord    {color: #A00000; font-weight: bold; }
+div.codearea pre span.ConsWord   {color: #008080; font-weight: bold;}
+div.codearea pre span.Error      {background: transparent url(../img/err.gif) repeat-x bottom center;}
+div.codearea pre span.ResWord2   {color: #0080ff; font-weight: bold; font-style: oblique;}
+div.codearea pre span.Special    {color: #0000ff;}
+div.codearea pre span.Preprc     {color: #803999;}
+
+
+/* Page info */
+#pageinfo { font-size: small; text-align: right; font-style: italic; display: block; float: right;  }
+
+span.anchor { position: absolute; }
+
+/* Content Figures 
+
+Default figure float to the end of the page. Left of right classes float to the left or right :-)
+*/
+#content .figure { float: right; margin: 0 0 0 20px; padding: 0; font-size: 0.85em; clear: both;}
+#content[dir="rtl"] .figure {float: left; margin: 0 20px 0 0;}
+#content .figure.left {float: left; margin: 0 20px 0 0;}
+#content .figure.right {float: right; margin: 0 0 0 20px;}
+#content .figure p {margin: 0; text-align: center; font-weight: bold;}
